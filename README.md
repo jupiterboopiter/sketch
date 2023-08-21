@@ -1,1 +1,1 @@
-# sketch
+This is another project by TOP. I will be creating a browser version of something between a sketchpad and an Etch-A-Sketch. I do want lots of color options and definitely a choice of pixels. I also wonder if I can do a save feature where I can actually save any drawings I make. That would be really cool!
