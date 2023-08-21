@@ -1,8 +1,8 @@
 const containerEl = document.querySelector('.container');
 
-let createDivs = "";
-for (let i = 0; i < Array.length; i++) {
-    createDivs += '<div class="box"></div>';
-}
+for(i = 0; i < 16; i++) {
+    let board = document.createElement('div');
+    board.className = 'boxes';
 
-console.log(createDivs);
+    document.getElementById('board').appendChild(board);
+}
