@@ -1,5 +1,55 @@
+* {
+    font-family: 'Gluten', cursive;
+}
+
+html {
+    background: url(https://images.unsplash.com/photo-1501349800519-48093d60bde0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.flex-container {
+    height: 95vh;
+    width: 125vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title h1 {
+    font-size: 4.5rem;
+    letter-spacing: 6px;
+}
+
 .board {
-    width: 500px;
-    height: 500px;
+    width: 740px;
+    height: 600px;
     display: grid;
+}
+
+.flex-container .content .buttons {
+    display: flex;
+
+}
+
+.flex-container .content .buttons button {
+    font-size: 1.5rem;
+    margin: 1.5rem;
+    padding: 8px 12px;
+}
+
+.flex-container .content .size {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-container .content .size input {
+    font-size: 2rem;
+}
+
+.flex-container .content .size button {
+    font-size: 1rem;
+    display: inline-block;
+    padding: 8px 12px;
 }

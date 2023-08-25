@@ -3,6 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Gluten&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="style.css">
         <title>Etch-A-Sketch!</title>
     </head>
@@ -20,7 +23,7 @@
                     <button onclick="changeColor('random')">Random</button>
                     <button onclick="resetBoard()">Reset</button>
                 </div>
-                <div>
+                <div class="size">
                     <input type="text" placeholder="Size of Board" value="16" onchange="changeSize(this.value)"/>
                     <button>Set Size</button>
                 </div>
