@@ -1,5 +1,6 @@
 * {
     font-family: 'Gluten', cursive;
+    margin: 0;
 }
 
 html {
@@ -9,7 +10,7 @@ html {
 }
 
 .flex-container {
-    height: 95vh;
+    height: 90vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -17,14 +18,18 @@ html {
 }
 
 .title h1 {
-    font-size: 4.5rem;
+    font-size: 5.5rem;
     letter-spacing: 6px;
+    text-shadow: -3px -3px 0 #5255fd, 3px -3px 0 #88ff51, -2px 2px 0 #f84b4b, 3px 3px 0 #9d0bff;
+    margin: 2.5rem;
 }
 
 .board {
     width: 740px;
     height: 600px;
     display: grid;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.507);
+    margin: 1.2rem;
 }
 
 .flex-container .content .buttons {
@@ -49,6 +54,7 @@ html {
 .flex-container .content .size input {
     font-size: 2rem;
     padding: 4px;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.281);
 }
 
 .flex-container .content .size button {
@@ -58,6 +64,7 @@ html {
     transition: .3s;
     background-color: white;
     border: 3px solid rgb(88, 88, 88);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.288);
 }
 
 .flex-container .content .size button:hover {
@@ -80,6 +87,7 @@ html {
     border-image-slice: 1;
     background-color: white;
     border-radius: 10%;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.507);
 }
 
 .flex-container .content .buttons .random:hover {
@@ -92,6 +100,7 @@ html {
 .flex-container .content .buttons .black {
     border: 3px solid black;
     transition: .3s;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.507);
 }
 
 .flex-container .content .buttons .black:hover {
@@ -104,6 +113,7 @@ html {
 .flex-container .content .buttons .gray {
     border: 3px solid gray;
     transition: .3s;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.507);
 }
 
 .flex-container .content .buttons .gray:hover {
@@ -115,6 +125,7 @@ html {
 .flex-container .content .buttons .eraser {
     transition: .3s;
     border: 3px solid rgba(146, 146, 146, 0.644);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.507);
 }
 
 .flex-container .content .buttons .eraser:hover {
@@ -126,6 +137,7 @@ html {
 .flex-container .content .buttons .reset {
     transition: .3s;
     border: 3px solid rgb(223, 33, 33);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, 0.507);
 }
 
 .flex-container .content .buttons .reset:hover {
