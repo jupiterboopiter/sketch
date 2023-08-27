@@ -3,14 +3,14 @@
 }
 
 html {
-    background: url(https://images.unsplash.com/photo-1501349800519-48093d60bde0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+    background: url(https://images.unsplash.com/photo-1629053800620-4584e836b3bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2022&q=80);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .flex-container {
     height: 95vh;
-    width: 125vw;
+    width: 100vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,6 +36,8 @@ html {
     font-size: 1.5rem;
     margin: 1.5rem;
     padding: 8px 12px;
+    border-radius: 10%;
+    background-color: white;
 }
 
 .flex-container .content .size {
@@ -46,10 +48,89 @@ html {
 
 .flex-container .content .size input {
     font-size: 2rem;
+    padding: 4px;
 }
 
 .flex-container .content .size button {
     font-size: 1rem;
     display: inline-block;
-    padding: 8px 12px;
+    padding: 11px 12px;
+    transition: .3s;
+    background-color: white;
+    border: 3px solid rgb(88, 88, 88);
+}
+
+.flex-container .content .size button:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    background-color: rgb(218, 218, 218);
+}
+
+.flex-container .content .error {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.flex-container .content .buttons .random {
+    transition: .3s;
+    border: 3px solid transparent;
+    border-image: linear-gradient(to bottom right, #b827fc 0%, #2c90fc 25%, #b8fd33 50%, #fec837 75%, #fd1892 100%);
+    border-image-slice: 1;
+    background-color: white;
+    border-radius: 10%;
+}
+
+.flex-container .content .buttons .random:hover {
+    background: url(https://media.tenor.com/KdtU9q5XTkEAAAAC/rainbow.gif);
+    cursor: pointer;
+    transform: scale(1.2);
+    border: white 3px solid;
+}
+
+.flex-container .content .buttons .black {
+    border: 3px solid black;
+    transition: .3s;
+}
+
+.flex-container .content .buttons .black:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    background: url(https://media2.giphy.com/media/ftYbYxLSsBgkcqN8OE/200w.gif?cid=6c09b952yrl94kzekbs5ei4w5m04sw4mxlpzjdqytzvy9wme&ep=v1_gifs_search&rid=200w.gif&ct=g);
+    color: white;
+}
+
+.flex-container .content .buttons .gray {
+    border: 3px solid gray;
+    transition: .3s;
+}
+
+.flex-container .content .buttons .gray:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    background: url(https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdmEyZXF1c29ibndwcGF0bTk2MGozNjA0MDcycXc1YXViY2tvbXZydyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/26BRvIYDe4ILO60Ni/giphy-downsized.gif);
+}
+
+.flex-container .content .buttons .eraser {
+    transition: .3s;
+    border: 3px solid rgba(146, 146, 146, 0.644);
+}
+
+.flex-container .content .buttons .eraser:hover {
+    background-color: rgba(255, 255, 255, 0.534);
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.flex-container .content .buttons .reset {
+    transition: .3s;
+    border: 3px solid rgb(223, 33, 33);
+}
+
+.flex-container .content .buttons .reset:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    background: url(https://img1.picmix.com/output/stamp/normal/7/6/3/8/1398367_ec0ce.gif);
+    color: white;
 }
